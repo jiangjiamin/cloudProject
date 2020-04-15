@@ -13,11 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>work</name>
     <description>Demo project for Spring Boot</description>
+    <!--设置仓库地址-->
     <repositories>
         <repository>
             <id>maven-public</id>
             <name>maven-public</name>
-            <url>http://127.0.0.1:32768/repository/maven-public/</url>
+            <url>http://127.0.0.1:32738/repository/maven-public/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -31,12 +32,12 @@
         <repository>
             <id>nexus-releases</id>
             <name>maven-releases</name>
-            <url>http://127.0.0.1:32768/repository/maven-releases/</url>
+            <url>http://127.0.0.1:32738/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>maven-snapshots</name>
-            <url>http://127.0.0.1:32768/repository/maven-snapshots/</url>
+            <url>http://127.0.0.1:32738/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
