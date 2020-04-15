@@ -13,12 +13,20 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>work</name>
     <description>Demo project for Spring Boot</description>
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <!--<mac.local.url></mac.local.url>-->
+    </properties>
+
     <!--设置仓库地址-->
     <repositories>
         <repository>
             <id>maven-public</id>
             <name>maven-public</name>
-            <url>http://127.0.0.1:32738/repository/maven-public/</url>
+            <url>http://docker.for.mac.host.internal:32738/repository/maven-public/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -32,19 +40,15 @@
         <repository>
             <id>nexus-releases</id>
             <name>maven-releases</name>
-            <url>http://127.0.0.1:32738/repository/maven-releases/</url>
+            <url>http://docker.for.mac.host.internal:32738/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>maven-snapshots</name>
-            <url>http://127.0.0.1:32738/repository/maven-snapshots/</url>
+            <url>http://docker.for.mac.host.internal:32738/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-    </properties>
 
     <dependencies>
         <dependency>
