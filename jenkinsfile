@@ -1,0 +1,56 @@
+pipeline {
+	agent any
+	environment {
+		remote_dir = ''
+	}
+	triggers {
+
+	}
+	options {
+		
+	}
+	stages {
+		stage('build Pro') {
+			when {
+				branch 'pro'
+			}
+			steps {
+
+			}
+		}
+
+		stage('build test') {
+			when {
+				branch 'test'
+			}
+			steps {
+
+			}
+		}
+
+		stage('build dev') {
+			when {
+				branch 'dev'
+			}
+			steps {
+
+			}
+		}
+
+		stage('clean') {
+			steps {
+				echo '清理工作目录'
+			}
+		}
+	}
+	post {
+		success {
+			sh 'echo 成功了'
+		}
+		failure {
+			sh 'echo 失败了'
+		}
+	}
+
+
+}
