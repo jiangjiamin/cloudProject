@@ -1,21 +1,15 @@
 pipeline {
 	agent any
-	environment {
+    environment {
 		remote_dir = ''
-	}
-	triggers {
-
-	}
-	options {
-		
-	}
+    }
 	stages {
 		stage('build Pro') {
 			when {
 				branch 'pro'
 			}
 			steps {
-
+				sh "echo 'helloWold'"
 			}
 		}
 
@@ -24,7 +18,7 @@ pipeline {
 				branch 'test'
 			}
 			steps {
-
+				sh "echo 'helloWold'"
 			}
 		}
 
@@ -33,7 +27,7 @@ pipeline {
 				branch 'dev'
 			}
 			steps {
-
+                sh "echo 'helloWold'"
 			}
 		}
 
