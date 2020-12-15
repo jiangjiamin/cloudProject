@@ -15,7 +15,7 @@ pipeline {
 				branch 'pro'
 			}
 			steps {
-
+				sh 'echo helloWold'
 			}
 		}
 
@@ -24,7 +24,7 @@ pipeline {
 				branch 'test'
 			}
 			steps {
-
+				sh 'echo helloWold'
 			}
 		}
 
